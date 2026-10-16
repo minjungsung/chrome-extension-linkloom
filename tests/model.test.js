@@ -1,0 +1,6 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';import {cleanUrl} from '../extension/model.js';
+test('removes trackers while preserving raw signed-independent values and fragments',()=>{assert.deepEqual(cleanUrl('https://example.com/p?q=a%20b&utm_source=email&fbclid=xyz&q=c+d#section'),{url:'https://example.com/p?q=a%20b&q=c+d#section',removed:['utm_source','fbclid'],protected:false});});
+test('handles duplicate and case-insensitive trackers',()=>{const r=cleanUrl('https://example.com?UTM_Source=one&UTM_Source=two&id=4&gclid=a');assert.equal(r.url,'https://example.com?id=4');assert.equal(r.removed.length,2);});
+test('signed or tokenized links remain byte-for-byte unchanged',()=>{for(const query of ['sig=a','X-Amz-Signature=a','token=a','expires=123']){const u='https://example.com?utm_source=x&'+query;assert.equal(cleanUrl(u).url,u);assert.equal(cleanUrl(u).protected,true);}});
+test('does not strip useful functional parameters or rewrite clean links',()=>{const u='https://example.com?ref=account&page=2&format=pdf#view';assert.equal(cleanUrl(u).url,u);});
+test('rejects credentials and executable schemes',()=>{for(const u of ['javascript:alert(1)','file:///test','https://user:password@example.com','not a URL'])assert.throws(()=>cleanUrl(u));});

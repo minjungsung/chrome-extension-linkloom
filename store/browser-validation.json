@@ -1,0 +1,13 @@
+{
+  "extension": "neatlink",
+  "validated": true,
+  "popup": {
+    "height": 600,
+    "width": 400,
+    "title": "NeatLink"
+  },
+  "checks": [
+    "clean URL in popup"
+  ],
+  "fixture": "Fictional local example domains and data; isolated browser profile"
+}
