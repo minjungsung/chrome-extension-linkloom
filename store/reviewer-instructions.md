@@ -1,3 +1,5 @@
 # Reviewer instructions
 
-Paste an HTTP URL with utm_source and a normal query parameter. Choose Clean links and inspect the preview. Paste multiple links, switch to Markdown list, and copy or export the results. Signed links are kept unchanged. No login is needed.
+Version 1.2.0. No account required.
+
+Open an HTTP page with ?id=42&utm_source=email. Invoke LinkLoom using the toolbar action. Confirm id=42 stays and utm_source disappears. Click Copy clean link and paste into a text field. Open batch tools for manual paste, signed-link checks and Markdown.

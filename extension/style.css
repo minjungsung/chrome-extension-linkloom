@@ -6,3 +6,5 @@ body:not(.library){height:600px;display:flex;flex-direction:column}body:not(.lib
 #url{min-height:70px;height:70px}#output{min-height:65px;height:65px}body:not(.library) h2{font-size:19px}
 
 :root{--accent:#156b77;background:#f2f7f8}.result-summary{margin:15px 0 8px;justify-content:space-between;font-size:12px}.result-summary>span{text-align:right}.results{max-height:190px;overflow:auto}.link-result{background:white;border:1px solid #dce6e9;border-radius:12px;padding:11px;margin-bottom:8px}.link-result strong{font-size:12px}.link-result p{margin:7px 0 0}.error{font-size:11px;color:#a64242}.link-result .preview{max-height:70px;color:#596677}.primary{background:var(--accent)}#output{height:70px}
+
+.daily-card{background:white;border:1px solid #dce6e9;border-radius:17px;padding:17px;margin:17px 0}.full{width:100%}#current-info{overflow-wrap:anywhere;margin-top:0}#current-preview{font-size:13px;padding:12px;background:#f1f7f8;border-radius:10px;max-height:120px;margin-bottom:16px}#batch>summary{font-size:12px;color:var(--accent);cursor:pointer}#batch[open]{padding-bottom:8px}#current-detail{margin-bottom:0}

@@ -1,25 +1,10 @@
-# LinkLoom walkthrough
+# LinkLoom guided demo
 
-Watch the [MP4 demo](walkthrough.mp4) or the animated walkthrough below. These are guided captures of the actual Chrome extension UI, using a disposable profile and fictional example URLs. The video advances between action frames; it is not continuous screen recording.
+Version 1.2.0. Actual Chrome extension actions captured as guided frames, not a continuous screen recording. Fictional example domains and article text in an isolated disposable profile.
 
-![LinkLoom animated walkthrough](walkthrough.gif)
+[Watch MP4](walkthrough.mp4) · [Animated GIF](walkthrough.gif) · [Browser player](index.html)
 
-## 1. Prepare a link or a whole list
-
-Paste one URL per line. LinkLoom can process up to 100 links.
-
-## 2. Paste three sample links
-
-Two links have trackers. The third is signed and should stay unchanged.
-
-## 3. Review what changed
-
-The preview lists removed parameters and preserves functional query values.
-
-## 4. Signed links stay intact
-
-Detected signed or tokenized links are preserved to avoid breaking access.
-
-## 5. Copy in the format you need
-
-Use plain URLs or a Markdown list. Export text creates a portable file.
+1. **Ready to share the page you are on** — Open LinkLoom. The current link is already cleaned and previewed.
+2. **Copy once, paste anywhere** — No pasting or configuration needed. Functional query values and fragments stay.
+3. **Protected links stay intact** — Detected signed links are copied unchanged; destinations are not visited.
+4. **Batch and Markdown are optional** — Open the extra tools only when a list or document needs them.

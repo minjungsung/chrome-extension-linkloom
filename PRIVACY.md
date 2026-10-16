@@ -2,20 +2,18 @@
 
 Effective date: 2026-10-16.
 
-## Local data and processing
+## Data and access
 
 URLs are held in popup memory only and are not persistently stored. Links are placed on the clipboard or in a downloaded text file only at your request.
 
-Processing happens on your device. The developer does not receive, sell, or transmit this data. The extension has no developer servers, accounts, cloud sync, analytics, advertising, or remote executable code. Local processing can involve sensitive text or URLs supplied by you; the store disclosures describe the data handled by the extension even though it is not sent to the developer.
+`activeTab` reads the current tab URL and title when you open the extension, to prepare the preview. No page content is read. Clipboard writing happens only on a copy button click.
 
-## Permissions
+Processing is local. The developer receives no extension data. No accounts, cloud sync, ads, analytics or remote executable code. Google and Chrome have separate privacy policies.
 
-`activeTab` reads the current tab URL and title only when you invoke the extension and choose Current tab. No page content is read.
+## Control and retention
 
-## Retention and control
-
-Local saved data remains until you delete it, clear extension data, or uninstall the extension. Exported files and clipboard contents are controlled by you. The library and collection tools provide delete and backup controls. LinkLoom keeps no persistent link history. FocusPet retains up to 90 days of daily counts and a lifetime companion total. Chrome and its Web Store have separate Google privacy policies.
+Saved data remains until deleted, extension storage is cleared, or the extension is uninstalled. Exported files and clipboard contents remain under your control and may contain private content. Links are kept in popup memory only; no persistent history.
 
 ## Contact
 
-Use this repository's issue tracker or the Chrome Web Store support contact for privacy questions. Do not post private content in public issues.
+Use this repository’s issue tracker or the store support contact. Never post private information publicly.

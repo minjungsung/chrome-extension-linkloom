@@ -10,23 +10,24 @@ English
 
 ## Description
 
-Clean once. Share anywhere.
+Open. Copy. Share a cleaner link.
 
-LinkLoom prepares a single URL or an entire list for sharing. Remove common tracking parameters, review the changes, and copy clean links as plain text or a Markdown list.
+The page you are on is already ready to share. Open LinkLoom, review the cleaned URL, and click Copy clean link. No paste step or setup required.
 
 FEATURES
-- Process up to 100 links at once, one URL per line.
-- Remove UTM parameters and common click identifiers such as fbclid, gclid, and msclkid.
-- Preview the resulting links and the removed parameters.
-- Keep detected signed or tokenized URLs unchanged.
-- Copy plain URLs or Markdown links, or export a text file.
-- Use the current tab without permanent website access.
+- Preview the active page URL immediately when opening the extension.
+- Copy a clean link only when you click the button.
+- Remove recognized trackers while keeping functional values and fragments.
+- Preserve detected signed or tokenized links unchanged.
+- Optional batch cleanup of up to 100 links, Markdown and text export.
 
 GOOD TO KNOW
 LinkLoom does not visit destinations, expand short URLs, or guarantee that all tracking is removed. It preserves unrelated query values and fragments. Invalid links are excluded from copy/export results. Links with embedded credentials are rejected. Always review important links before sharing.
 
-PRIVATE BY DEFAULT
-No account, analytics, advertising, cloud synchronization, or developer servers. Processing happens on your device. Links are not saved by the extension. Exported files may contain private information; keep them somewhere you trust.
+PRIVACY
+URLs are held in popup memory only and are not persistently stored. Links are placed on the clipboard or in a downloaded text file only at your request.
+`activeTab` reads the current tab URL and title when you open the extension, to prepare the preview. No page content is read. Clipboard writing happens only on a copy button click.
+No account, ads, analytics or developer servers.
 
 SUPPORT
-Report bugs or suggestions through the support link. Please remove private URLs, notes, and credentials from reports.
+Use the support link to report reproducible issues. Remove private information first.

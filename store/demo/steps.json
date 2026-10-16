@@ -1,35 +1,30 @@
 {
   "name": "LinkLoom",
   "slug": "linkloom",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "type": "Actual Chrome extension UI, recorded as step-by-step frames",
   "fixture": "Disposable profile; fictional example URLs and article text",
   "fastForward": null,
   "steps": [
     {
       "file": "step-01.png",
-      "title": "Prepare a link or a whole list",
-      "caption": "Paste one URL per line. LinkLoom can process up to 100 links."
+      "title": "Ready to share the page you are on",
+      "caption": "Open LinkLoom. The current link is already cleaned and previewed."
     },
     {
       "file": "step-02.png",
-      "title": "Paste three sample links",
-      "caption": "Two links have trackers. The third is signed and should stay unchanged."
+      "title": "Copy once, paste anywhere",
+      "caption": "No pasting or configuration needed. Functional query values and fragments stay."
     },
     {
       "file": "step-03.png",
-      "title": "Review what changed",
-      "caption": "The preview lists removed parameters and preserves functional query values."
+      "title": "Protected links stay intact",
+      "caption": "Detected signed links are copied unchanged; destinations are not visited."
     },
     {
       "file": "step-04.png",
-      "title": "Signed links stay intact",
-      "caption": "Detected signed or tokenized links are preserved to avoid breaking access."
-    },
-    {
-      "file": "step-05.png",
-      "title": "Copy in the format you need",
-      "caption": "Use plain URLs or a Markdown list. Export text creates a portable file."
+      "title": "Batch and Markdown are optional",
+      "caption": "Open the extra tools only when a list or document needs them."
     }
   ]
 }
