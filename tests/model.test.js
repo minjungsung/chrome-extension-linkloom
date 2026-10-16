@@ -4,3 +4,6 @@ test('handles duplicate and case-insensitive trackers',()=>{const r=cleanUrl('ht
 test('signed or tokenized links remain byte-for-byte unchanged',()=>{for(const query of ['sig=a','X-Amz-Signature=a','token=a','expires=123']){const u='https://example.com?utm_source=x&'+query;assert.equal(cleanUrl(u).url,u);assert.equal(cleanUrl(u).protected,true);}});
 test('does not strip useful functional parameters or rewrite clean links',()=>{const u='https://example.com?ref=account&page=2&format=pdf#view';assert.equal(cleanUrl(u).url,u);});
 test('rejects credentials and executable schemes',()=>{for(const u of ['javascript:alert(1)','file:///test','https://user:password@example.com','not a URL'])assert.throws(()=>cleanUrl(u));});
+import {cleanBatch,markdownLink} from '../extension/model.js';
+test('batch results isolate invalid input and limit work',()=>{const r=cleanBatch('https://example.com?utm_source=x\nnot a link\nhttps://example.org?q=a%20b');assert.equal(r[0].url,'https://example.com');assert.ok(r[1].error);assert.equal(r[2].url,'https://example.org?q=a%20b');assert.throws(()=>cleanBatch(Array(101).fill('https://example.com').join('\n')));});
+test('Markdown output escapes brackets and destination parentheses',()=>{assert.equal(markdownLink('[Title]','https://example.com/a(b)'), '[\\[Title\\]](https://example.com/a%28b%29)');});

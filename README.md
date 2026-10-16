@@ -1,39 +1,40 @@
-# NeatLink
+# LinkLoom
 
-Share the link. Skip the clutter.
+Clean once. Share anywhere.
 
-Remove common tracking parameters from links before sharing. Preview every change and copy a cleaner URL in one click.
+LinkLoom prepares a single URL or an entire list for sharing. Remove common tracking parameters, review the changes, and copy clean links as plain text or a Markdown list.
+
+## Features
+
+- Process up to 100 links at once, one URL per line.
+- Remove UTM parameters and common click identifiers such as fbclid, gclid, and msclkid.
+- Preview the resulting links and the removed parameters.
+- Keep detected signed or tokenized URLs unchanged.
+- Copy plain URLs or Markdown links, or export a text file.
+- Use the current tab without permanent website access.
+
+## Limits
+
+LinkLoom does not visit destinations, expand short URLs, or guarantee that all tracking is removed. It preserves unrelated query values and fragments. Invalid links are excluded from copy/export results. Links with embedded credentials are rejected. Always review important links before sharing.
 
 ## Development
 
-Open `chrome://extensions`, enable Developer mode, choose **Load unpacked**, and select `extension/`. No build or package dependencies are needed.
+Open `chrome://extensions`, enable Developer mode, choose **Load unpacked**, and select `extension/`. All runtime assets are packaged locally.
 
-Run `npm test` for logic tests and `npm run package` to validate and create a clean ZIP in `dist/`.
+Run `npm test` for logic tests. Run `npm run package` to validate and create an upload ZIP in `dist/`. No build step or runtime package dependencies are required.
 
 ## Privacy
 
-See [PRIVACY.md](PRIVACY.md) for stored data and permission explanations. No accounts, analytics, ads, or developer servers.
+URLs are held in popup memory only and are not persistently stored. Links are placed on the clipboard or in a downloaded text file only at your request.
+
+`activeTab` reads the current tab URL and title only when you invoke the extension and choose Current tab. No page content is read.
+
+See [PRIVACY.md](PRIVACY.md). No developer servers, advertising, or analytics.
 
 ## Support
 
-Report bugs through this repository's issue tracker. Include reproducible steps and the extension version, with private information removed.
+Report reproducible bugs through this repository's issue tracker. Remove private information first.
 
 ## License
 
 MIT.
-
-## Features and limits
-
-NeatLink removes common tracking parameters before you share a URL. Paste a link or use the current tab, preview the cleaned result, and copy it.
-
-FEATURES
-- Remove UTM parameters and common click identifiers, including fbclid, gclid, and msclkid.
-- See exactly which parameters were removed.
-- Preserve unrelated query values and URL fragments.
-- Keep detected signed or tokenized links unchanged.
-- No automatic navigation changes, login, or tracking.
-
-NeatLink works on HTTP and HTTPS URLs. It does not expand short links, visit the destination, or guarantee that a link contains no tracking. A cleaner URL does not change the privacy practices of the destination website. Check the preview before sharing important links.
-
-PRIVACY
-Links are processed locally and are not saved by the extension. Current-tab access happens only when you invoke the extension. The clipboard receives the cleaned link only when you choose Copy clean link. No developer servers or analytics.

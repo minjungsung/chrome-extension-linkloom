@@ -1,14 +1,14 @@
 {
   "manifest_version": 3,
-  "name": "NeatLink",
-  "version": "1.0.0",
-  "description": "Remove common tracking parameters from links before sharing. Preview every change and copy a cleaner URL in one click.",
+  "name": "LinkLoom",
+  "version": "1.1.0",
+  "description": "Clean tracking parameters from up to 100 links at once. Preview changes, preserve signed URLs, and copy plain or Markdown links.",
   "permissions": [
     "activeTab"
   ],
   "action": {
     "default_popup": "popup.html",
-    "default_title": "NeatLink"
+    "default_title": "LinkLoom"
   },
   "icons": {
     "16": "icons/icon16.png",
