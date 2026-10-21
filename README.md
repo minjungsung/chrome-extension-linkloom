@@ -22,6 +22,10 @@ The page you are on is already ready to share. Open LinkLoom, review the cleaned
 
 LinkLoom does not visit destinations, expand short URLs, or guarantee that all tracking is removed. It preserves unrelated query values and fragments. Invalid links are excluded from copy/export results. Links with embedded credentials are rejected. Always review important links before sharing.
 
+## Feedback
+
+The help page links to honest Chrome Web Store reviews. No feedback history is stored.
+
 ## Development
 
 Load `extension/` unpacked in Chrome Developer mode. Run `npm test` and `npm run package`. There is no runtime dependency or build step.

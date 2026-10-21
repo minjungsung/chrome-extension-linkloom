@@ -1,18 +1,18 @@
 # LinkLoom
 
-## Category
+## Store fields
 
-Tools
-
-## Language
-
-English
+- Title: LinkLoom: Clean URLs & Remove Trackers
+- Summary: Clean URLs before sharing. Remove recognized tracking parameters, preview the result, and copy one link or a batch.
+- Category: Tools
+- Language: English
 
 ## Description
 
-Open. Copy. Share a cleaner link.
+LinkLoom removes recognized tracking parameters from URLs before you share them. Open the extension on a web page, review the cleaned link, and copy it into a chat, email, or document.
 
-The page you are on is already ready to share. Open LinkLoom, review the cleaned URL, and click Copy clean link. No paste step or setup required.
+GET STARTED
+Open LinkLoom on the page you want to share. Review the URL and click Copy clean link. Expand the batch tool when you have several links.
 
 FEATURES
 - Preview the active page URL immediately when opening the extension.

@@ -1,0 +1,22 @@
+LinkLoom removes recognized tracking parameters from URLs before you share them. Open the extension on a web page, review the cleaned link, and copy it into a chat, email, or document.
+
+GET STARTED
+Open LinkLoom on the page you want to share. Review the URL and click Copy clean link. Expand the batch tool when you have several links.
+
+FEATURES
+- Preview the active page URL immediately when opening the extension.
+- Copy a clean link only when you click the button.
+- Remove recognized trackers while keeping functional values and fragments.
+- Preserve detected signed or tokenized links unchanged.
+- Optional batch cleanup of up to 100 links, Markdown and text export.
+
+GOOD TO KNOW
+LinkLoom does not visit destinations, expand short URLs, or guarantee that all tracking is removed. It preserves unrelated query values and fragments. Invalid links are excluded from copy/export results. Links with embedded credentials are rejected. Always review important links before sharing.
+
+PRIVACY
+URLs are held in popup memory only and are not persistently stored. Links are placed on the clipboard or in a downloaded text file only at your request.
+`activeTab` reads the current tab URL and title when you open the extension, to prepare the preview. No page content is read. Clipboard writing happens only on a copy button click.
+No account, ads, analytics or developer servers.
+
+SUPPORT
+Use the support link to report reproducible issues. Remove private information first.
